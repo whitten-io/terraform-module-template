@@ -1,9 +1,9 @@
 name: Feature Workflow
 on:
   push:
-    branches: [ "featue/*" ]
+    branches: [ "feature/*", "main" ]
   pull_request:
-
+    branches: ["main" ]
 jobs:
   tflint:
     runs-on: ${{ matrix.os }}
